@@ -1,5 +1,21 @@
 * {
   margin: 0;
   padding: 0;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.badge {
+  border-radius: 10px;
+  padding: 5px;
+  border: 2px solid black;
+  display: inline;
+  background-color: midnightblue;
+  color: whitesmoke;
 }
