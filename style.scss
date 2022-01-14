@@ -60,3 +60,15 @@ body {
   color: whitesmoke;
 }
 
+@media screen and (min-width: 991px) {
+  .links{ 
+    font-weight: bold;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+  }
+  .menu {
+    display: none;
+  }
+}
