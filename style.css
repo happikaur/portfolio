@@ -57,3 +57,17 @@ body {
   background-color: midnightblue;
   color: whitesmoke;
 }
+
+@media screen and (min-width: 768px) {
+  .links {
+    font-weight: bold;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+  }
+
+  .menu {
+    display: none;
+  }
+}
