@@ -76,6 +76,32 @@ body {
   color: whitesmoke;
 }
 
+#portfolio .project {
+  width: 100%;
+  padding: 30px;
+}
+#portfolio .project h2, #portfolio .project p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#portfolio .project .box {
+  border: 2px solid black;
+  width: calc(100% - 60px);
+  height: 300px;
+}
+#portfolio .project .box .description p {
+  display: none;
+}
+#portfolio .project .links {
+  width: calc(100% - 60px);
+  display: flex;
+  justify-content: space-around;
+}
+#portfolio .project .links .link {
+  color: #000000;
+  font-size: 50px;
+}
+
 @media screen and (min-width: 768px) {
   .links {
     font-weight: bold;

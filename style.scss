@@ -3,6 +3,7 @@ $dark-blue: midnightblue;
 $white: #fff;
 $text-stroke: 3px $dark-blue;
 $background: rgb(250, 196, 196);
+$black: #000000;
 
 
 * {
@@ -86,7 +87,36 @@ body {
 }
 
 #portfolio {
+  .project {
+    width: 100%;
+    padding: 30px;
 
+    h2, p {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .box {
+      border: 2px solid black;
+      width: calc(100% - 60px);
+      height: 300px;
+      .description {
+        p {
+          display: none;
+        }
+      }
+    }
+    .links {
+      width: calc(100% - 60px);
+      display: flex;
+      justify-content: space-around;
+      .link {
+        color: $black;
+        font-size: 50px;
+        
+      }
+    }
+  }
+  
 }
 
 
