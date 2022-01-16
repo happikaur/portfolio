@@ -53,7 +53,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.name {
+#about .name {
   display: flex;
   justify-content: center;
   margin: 50px;
@@ -62,12 +62,11 @@ body {
   text-stroke: 3px midnightblue;
   -webkit-text-stroke: 3px midnightblue;
 }
-
-.keyword {
+#about .keyword {
   display: flex;
   justify-content: center;
 }
-.keyword .badge {
+#about .keyword .badge {
   border-radius: 10px;
   padding: 5px;
   margin: 10px;

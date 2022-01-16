@@ -57,34 +57,37 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.name {
-  display: flex;
-  justify-content: center;
-  margin: 50px;
-  font-size: 40px;
-  color: $white;
-  text-stroke: $text-stroke;
-  -webkit-text-stroke: $text-stroke;
-  
+#about {
+  .name {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    font-size: 40px;
+    color: $white;
+    text-stroke: $text-stroke;
+    -webkit-text-stroke: $text-stroke; 
+  }
+
+  .keyword {
+    display: flex;
+    justify-content: center;
+
+      .badge {
+        border-radius: 10px;
+        padding: 5px;
+        margin: 10px;
+        border: 2px solid black;
+        display: inline;
+        background-color: midnightblue;
+        color: whitesmoke;
+        
+      }
+  }
 }
 
-.keyword {
-  display: flex;
-  justify-content: center;
+#portfolio {
 
-    .badge {
-      border-radius: 10px;
-      padding: 5px;
-      margin: 10px;
-      border: 2px solid black;
-      display: inline;
-      background-color: midnightblue;
-      color: whitesmoke;
-      
-    }
 }
-
-
 
 
 // Desktop site
