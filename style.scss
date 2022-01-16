@@ -58,6 +58,13 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.heading {
+  font-size: 35px;
+  color: $dark-blue;
+  display: flex;
+  justify-content: center;
+}
+
 #about {
   width: 100%;
 
