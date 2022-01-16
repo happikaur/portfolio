@@ -101,7 +101,7 @@ body {
 }
 
 #portfolio .project {
-  width: 100%;
+  width: calc(100% - 60px);
   padding: 30px;
 }
 #portfolio .project h2, #portfolio .project p {
@@ -110,20 +110,32 @@ body {
 }
 #portfolio .project .box {
   border: 2px solid black;
-  width: calc(100% - 60px);
+  width: calc(100% - 4px);
   height: 300px;
 }
 #portfolio .project .box .description p {
   display: none;
 }
 #portfolio .project .links {
-  width: calc(100% - 60px);
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
 #portfolio .project .links .link {
   color: #000000;
   font-size: 50px;
+}
+
+#experience {
+  width: calc(100% - 60px);
+  padding: 30px;
+}
+#experience .background {
+  display: flex;
+  flex-direction: column;
+}
+#experience .history .list {
+  margin: 20px;
 }
 
 @media screen and (min-width: 768px) {
