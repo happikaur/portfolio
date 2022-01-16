@@ -53,18 +53,24 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#about {
+  width: 100%;
+}
 #about .name {
+  margin: 50px;
   display: flex;
   justify-content: center;
-  margin: 50px;
   font-size: 40px;
   color: #fff;
   text-stroke: 3px midnightblue;
   -webkit-text-stroke: 3px midnightblue;
 }
 #about .keyword {
+  margin: 50px;
+  margin-top: 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 #about .keyword .badge {
   border-radius: 10px;

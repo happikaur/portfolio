@@ -59,10 +59,12 @@ body {
 }
 
 #about {
+  width: 100%;
+
   .name {
-    display: flex;
-    justify-content: center;
     margin: 50px;
+    display: flex;
+    justify-content: center;    
     font-size: 40px;
     color: $white;
     text-stroke: $text-stroke;
@@ -70,8 +72,11 @@ body {
   }
 
   .keyword {
+    margin: 50px;
+    margin-top: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
       .badge {
         border-radius: 10px;
