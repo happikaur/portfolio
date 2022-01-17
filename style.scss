@@ -1,11 +1,18 @@
 // Variable 
 $dark-blue: midnightblue;
 $white: #fff;
+$text-stroke: 3px $dark-blue;
+$background: rgb(250, 196, 196);
+$black: #000000;
 
 
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: $background;
 }
 
 html {
@@ -53,15 +60,125 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.badge {
-  border-radius: 10px;
-  padding: 5px;
-  border: 2px solid black;
-  display: inline;
-  background-color: midnightblue;
-  color: whitesmoke;
+.heading {
+  font-size: 35px;
+  color: $dark-blue;
+  display: flex;
+  justify-content: center;
 }
 
+#about {
+  width: 100%;
+
+  .name {
+    margin: 50px;
+    display: flex;
+    justify-content: center;    
+    font-size: 50px;
+    color: $white;
+    text-stroke: $text-stroke;
+    -webkit-text-stroke: $text-stroke; 
+  }
+
+  .keyword {
+    margin: 50px;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+      .badge {
+        border-radius: 10px;
+        padding: 5px;
+        margin: 10px;
+        border: 2px solid black;
+        display: inline;
+        background-color: midnightblue;
+        color: whitesmoke;
+        
+      }
+  }
+  .intro {
+    margin: 30px;
+    margin-top: 0;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    .p {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+#portfolio {
+  .project {
+    width: calc(100% - 60px);
+    padding: 30px;
+
+    h2, p {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .box {
+      border: 2px solid black;
+      width: calc(100% - 4px);
+      height: 300px;
+      .description {
+        p {
+          display: none;
+        }
+      }
+    }
+    .links {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      .link {
+        color: $black;
+        font-size: 50px;
+        
+      }
+    }
+  }
+  
+}
+
+#experience {
+  width: calc(100% - 60px);
+  padding: 30px;
+  
+
+  .background {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      color: $dark-blue;
+    }
+
+    p {     
+      margin-top: 10px;
+    }
+    
+  }
+  .history {
+    h3 { 
+    font-style: italic;
+    color: $dark-blue;
+    }
+
+    .lists {
+      margin: 20px;
+      margin-left: 50px;
+    }
+  }
+  
+}
+
+
+// Desktop site
 @media screen and (min-width: 768px) {
   .links{ 
     font-weight: bold;
