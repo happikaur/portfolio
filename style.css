@@ -131,11 +131,23 @@ body {
   padding: 30px;
 }
 #experience .background {
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
 }
-#experience .history .list {
+#experience .background h2 {
+  color: midnightblue;
+}
+#experience .background p {
+  margin-top: 10px;
+}
+#experience .history h3 {
+  font-style: italic;
+  color: midnightblue;
+}
+#experience .history .lists {
   margin: 20px;
+  margin-left: 50px;
 }
 
 @media screen and (min-width: 768px) {
