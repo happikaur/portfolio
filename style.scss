@@ -1,3 +1,8 @@
+// Variable 
+$dark-blue: midnightblue;
+$white: #fff;
+
+
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +13,8 @@ html {
 }
 
 nav {
-  color: #fff;
-  background-color: midnightblue;
+  color: $white;
+  background-color: $dark-blue;
   height: 8vh;
   width: 100%;
   font-size: 15px;
@@ -17,12 +22,11 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  & a {
+    color: $white;
+    text-decoration: none;
+  }
 }
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
 .logo {
   height: 100%;
   width: 40%;
@@ -32,7 +36,6 @@ nav a {
   align-items: center;
   justify-content: flex-start;
 }
-
 .menu {
   font-size: 30px;
   font-weight: bold;
@@ -42,13 +45,12 @@ nav a {
   justify-content: space-around;
   align-content: flex-end;
 }
-
 .links {
   display: none;
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .badge {
@@ -61,14 +63,13 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .links {
+  .links{ 
     font-weight: bold;
     width: 40%;
     display: flex;
     justify-content: space-around;
     align-content: flex-end;
   }
-
   .menu {
     display: none;
   }
