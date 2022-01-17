@@ -152,6 +152,60 @@ body {
   margin-left: 50px;
 }
 
+#contact {
+  width: 100%;
+}
+#contact .contact_container {
+  background-color: midnightblue;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  width: calc(100% - 80px);
+}
+#contact .contact_container .contact_image {
+  width: 220px;
+  height: 220px;
+  border: 2px solid black;
+  border-radius: 150px;
+}
+#contact .contact_container .contact_info {
+  margin: 15px;
+}
+#contact .contact_container .contact_info h2 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+#contact .contact_container .contact_info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#contact .contact_container .contact_info p .resume {
+  color: #fac4c4;
+}
+#contact .contact_container .contact_links_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+}
+#contact .contact_container .contact_links_container .contact-link {
+  color: #fff;
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+#contact .contact_container .contact_links_container .contact-link p {
+  font-size: 15px;
+}
+#contact .contact_container .contact_links_container .contact-link .contact-icon {
+  color: #fff;
+  font-size: 50px;
+}
+
 @media screen and (min-width: 768px) {
   .links {
     font-weight: bold;
