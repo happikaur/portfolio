@@ -12,9 +12,11 @@ html {
 }
 
 nav {
+  position: fixed;
+  top: 0;
   color: #fff;
   background-color: midnightblue;
-  height: 8vh;
+  height: 60px;
   width: 100%;
   font-size: 15px;
   display: flex;
@@ -25,6 +27,21 @@ nav {
 nav a {
   color: #fff;
   text-decoration: none;
+}
+nav:hover .nav-links, nav.--show .nav-links {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: auto;
+  padding: 20px;
+  background-color: midnightblue;
+  font-size: 20px;
+}
+nav:hover .nav-links .nav, nav.--show .nav-links .nav {
+  margin: 10px;
 }
 
 .logo {
@@ -47,7 +64,7 @@ nav a {
   align-content: flex-end;
 }
 
-.links {
+.nav-links {
   display: none;
 }
 
@@ -64,6 +81,7 @@ body {
 
 #about {
   width: 100%;
+  margin-top: 125px;
 }
 #about .name {
   margin: 50px;
@@ -207,15 +225,53 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .links {
-    font-weight: bold;
-    width: 40%;
+  nav {
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    font-size: 15px;
     display: flex;
-    justify-content: space-around;
-    align-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
-
-  .menu {
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  nav:hover .nav-links, nav.--show .nav-links {
+    position: static;
+    top: auto;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding: 0;
+    background-color: midnightblue;
+    font-size: 20px;
+    font-weight: bold;
+    width: 70%;
+    justify-content: flex-end;
+  }
+  nav .nav-links {
+    position: static;
+    top: auto;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding: 0;
+    background-color: midnightblue;
+    font-size: 20px;
+    font-weight: bold;
+    width: 70%;
+    justify-content: flex-end;
+  }
+  nav .nav-links .nav {
+    margin: 10px;
+  }
+  nav .menu {
     display: none;
   }
 }
