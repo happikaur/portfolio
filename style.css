@@ -120,9 +120,17 @@ body {
   margin-bottom: 15px;
 }
 
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #portfolio .project {
-  width: calc(100% - 60px);
-  padding: 30px;
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #portfolio .project h2, #portfolio .project p {
   font-size: 20px;
@@ -130,20 +138,42 @@ body {
 }
 #portfolio .project .box {
   border: 2px solid black;
-  width: calc(100% - 4px);
+  border-radius: 30px;
+  width: 400px;
   height: 300px;
+  background-color: midnightblue;
+  color: #fff;
+  background-image: url("https://via.placeholder.com/300");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#portfolio .project .box .project-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+#portfolio .project .box .description {
+  padding: 20px;
+  text-align: center;
 }
 #portfolio .project .box .description p {
   display: none;
 }
+#portfolio .project .box:hover {
+  background-image: none;
+}
+#portfolio .project .box:hover .description p {
+  display: block;
+}
 #portfolio .project .links {
-  width: 100%;
+  width: 400px;
   display: flex;
   justify-content: space-around;
 }
 #portfolio .project .links .link {
   color: #000000;
-  font-size: 50px;
+  margin-top: 10px;
+  font-size: 40px;
 }
 
 #experience {
@@ -273,5 +303,28 @@ body {
   }
   nav .menu {
     display: none;
+  }
+
+  #about .intro {
+    margin: 50px;
+  }
+
+  #portfolio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #portfolio .projects-container-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #portfolio .projects-container-main .project-container {
+    margin: 10px;
+  }
+
+  #experience {
+    width: calc(100% - 80px);
+    padding: 40px;
   }
 }
