@@ -5,7 +5,6 @@ $text-stroke: 3px $dark-blue;
 $background: rgb(250, 196, 196);
 $black: #000000;
 
-
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +35,6 @@ nav {
     text-decoration: none;
   }
   &:hover, &.--show {
-
     .nav-links {
       position: absolute;
       top: 60px;
@@ -49,12 +47,13 @@ nav {
       background-color: $dark-blue;
       font-size: 20px;
 
-    .nav {
-      margin: 10px;
-    }
+      .nav {
+        margin: 10px;
+      }
     }
   }
 }
+
 .logo {
   height: 100%;
   width: 40%;
@@ -64,6 +63,7 @@ nav {
   align-items: center;
   justify-content: flex-start;
 }
+
 .menu {
   font-size: 30px;
   font-weight: bold;
@@ -73,6 +73,7 @@ nav {
   justify-content: space-around;
   align-content: flex-end;
 }
+
 .nav-links {
   display: none;
 }
@@ -119,7 +120,6 @@ body {
         display: inline;
         background-color: midnightblue;
         color: whitesmoke;
-        
       }
   }
   .intro {
@@ -136,43 +136,77 @@ body {
 }
 
 #portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   .project {
-    width: calc(100% - 60px);
-    padding: 30px;
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     h2, p {
       font-size: 20px;
       margin-bottom: 10px;
     }
+
     .box {
       border: 2px solid black;
-      width: calc(100% - 4px);
+      border-radius: 30px;
+      width: 400px;
       height: 300px;
+      background-color: $dark-blue;
+      color: $white;
+      background-image: url('https://via.placeholder.com/300');
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      .project-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+      }
+
       .description {
+        padding: 20px;
+        text-align: center;
+
         p {
           display: none;
         }
       }
+
+      &:hover {
+        background-image: none;
+
+        .description{
+          p {
+            display: block;
+          }
+        }
+      }
     }
+
     .links {
-      width: 100%;
+      width: 400px;
       display: flex;
       justify-content: space-around;
+
       .link {
         color: $black;
-        font-size: 50px;
-        
+        margin-top: 10px;
+        font-size: 40px;
       }
     }
   }
-  
 }
 
 #experience {
   width: calc(100% - 60px);
   padding: 30px;
   
-
   .background {
     margin: 50px 0;
     display: flex;
@@ -198,13 +232,10 @@ body {
       margin-left: 50px;
     }
   }
-  
 }
 
 #contact {
   width: 100%;
-;
-  
 
   .contact_container {
     background-color: $dark-blue;
@@ -214,7 +245,6 @@ body {
     align-items: center;
     color: $white;
     width: calc(100% - 80px);
-
 
     .contact_image {      
       width: 220px;
@@ -262,17 +292,14 @@ body {
         .contact-icon {
           color: $white;          
           font-size: 50px;
-
-          
         }
       }
     }
   }
-
 }
 
 
-// Desktop site
+// Tablet site
 @media screen and (min-width: 768px) {
   nav {
     position: fixed;
@@ -326,5 +353,29 @@ body {
     .menu {
       display: none;
     }
+  }
+  #about {
+    .intro {
+      margin: 50px;
+    }
+  }
+  #portfolio {
+    display: flex;
+    flex-wrap: wrap;
+
+    .projects-container-main {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      .project-container {
+        margin:10px;
+      }
+    }
+  }
+  #experience {
+    width: calc(100% - 80px);
+    padding: 40px;
   }
 }
