@@ -178,8 +178,10 @@ nav {
       }
 
       .description {
+        height: calc(100% - 40px);
         padding: 20px;
         text-align: center;
+       
 
         p {
           display: none;
@@ -190,6 +192,9 @@ nav {
         background-image: none;
 
         .description{
+          display: flex;
+          align-items: center;
+
           p {
             display: block;
           }

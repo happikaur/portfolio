@@ -152,6 +152,7 @@ nav:hover .nav-links .nav, nav.--show .nav-links .nav {
   height: 100%;
 }
 #portfolio .project .box .description {
+  height: calc(100% - 40px);
   padding: 20px;
   text-align: center;
 }
@@ -160,6 +161,10 @@ nav:hover .nav-links .nav, nav.--show .nav-links .nav {
 }
 #portfolio .project .box:hover {
   background-image: none;
+}
+#portfolio .project .box:hover .description {
+  display: flex;
+  align-items: center;
 }
 #portfolio .project .box:hover .description p {
   display: block;
