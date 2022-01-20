@@ -246,11 +246,19 @@ nav {
     color: $white;
     width: calc(100% - 80px);
 
-    .contact_image {      
-      width: 220px;
-      height: 220px;
-      border: 2px solid black;
-      border-radius: 150px;
+    .contact_image {  
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-right: 30px;
+
+      .contact-img {
+        width: 220px;
+        height: 220px;
+        border: 2px solid black;
+        border-radius: 150px;
+      }    
+      
     }
 
     .contact_info {
@@ -381,5 +389,27 @@ nav {
   #experience {
     width: calc(100% - 80px);
     padding: 40px;
+  }
+
+  #contact {
+    .contact_container {
+    display: grid;
+    grid-template-areas: 
+    "image info"
+    "image links";
+    
+      .contact_image {
+      align-items: flex-end;
+        grid-area: image;
+      }
+      .contact_info {
+        // text-align: center;
+        grid-area: info;
+      }
+      .contact_links_container {
+        text-align: center;
+        grid-area: links;
+      }
+    }
   }
 }

@@ -212,6 +212,12 @@ nav:hover .nav-links .nav, nav.--show .nav-links .nav {
   width: calc(100% - 80px);
 }
 #contact .contact_container .contact_image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+}
+#contact .contact_container .contact_image .contact-img {
   width: 220px;
   height: 220px;
   border: 2px solid black;
@@ -330,5 +336,21 @@ nav:hover .nav-links .nav, nav.--show .nav-links .nav {
   #experience {
     width: calc(100% - 80px);
     padding: 40px;
+  }
+
+  #contact .contact_container {
+    display: grid;
+    grid-template-areas: "image info" "image links";
+  }
+  #contact .contact_container .contact_image {
+    align-items: flex-end;
+    grid-area: image;
+  }
+  #contact .contact_container .contact_info {
+    grid-area: info;
+  }
+  #contact .contact_container .contact_links_container {
+    text-align: center;
+    grid-area: links;
   }
 }
