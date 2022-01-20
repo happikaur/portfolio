@@ -15,10 +15,6 @@ $default-padding: 30px;
   padding: 0;
 }
 
-
-// Ollie asked to change the font to something from google fonts
-// Also change the boxes to square
-
 body {
   background-color: $background;
   font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
@@ -161,8 +157,6 @@ nav {
     }
 
     .box {
-      // border: 2px solid black;
-      // border-radius: 30px;
       width: 400px;
       height: 300px;
       background-color: $dark-blue;
@@ -174,14 +168,12 @@ nav {
       .project-img {
         width: 100%;
         height: 100%;
-        // border-radius: 30px;
       }
 
       .description {
         height: calc(100% - 40px);
         padding: 20px;
         text-align: center;
-       
 
         p {
           display: none;
@@ -271,8 +263,7 @@ nav {
         height: 220px;
         border: 2px solid black;
         border-radius: 150px;
-      }    
-      
+      }
     }
 
     .contact_info {
@@ -320,8 +311,7 @@ nav {
   }
 }
 
-
-// Tablet site
+// Tablet/Desktop site
 @media screen and (min-width: 768px) {
   nav {
     position: fixed;
@@ -333,10 +323,12 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
     & a {
       color: $white;
       text-decoration: none;
     }
+
     &:hover, &.--show {
       .nav-links {
         position: static;
@@ -352,6 +344,7 @@ nav {
         justify-content: flex-end;
       }
     }
+
     .nav-links {
       position: static;
       top: auto;
@@ -400,6 +393,7 @@ nav {
       }
     }
   }
+
   #experience {
     width: calc(100% - 80px);
     padding: 40px;
@@ -417,7 +411,6 @@ nav {
         grid-area: image;
       }
       .contact_info {
-        // text-align: center;
         grid-area: info;
       }
       .contact_links_container {
