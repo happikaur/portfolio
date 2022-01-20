@@ -216,6 +216,7 @@ nav:hover .nav-links .nav, nav.--show .nav-links .nav {
   justify-content: flex-end;
   align-items: center;
   padding-right: 30px;
+  padding-top: 12px;
 }
 #contact .contact_container .contact_image .contact-img {
   width: 220px;
