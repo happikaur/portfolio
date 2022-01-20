@@ -81,7 +81,7 @@ nav:hover .nav-links .nav, nav.--show .nav-links .nav {
 #about {
   width: 100%;
   padding-top: 80px;
-  background-image: url(./background-unsplash.jpg);
+  background-image: url(/image/background-unsplash.jpg);
   background-size: cover;
 }
 #about .name {
