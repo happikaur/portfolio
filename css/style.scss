@@ -217,10 +217,11 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
 
     .history {
       margin: 20px;
+      text-align: center;
 
       h3 { 
       font-style: italic;

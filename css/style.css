@@ -189,9 +189,11 @@ nav:hover .nav-links .nav, nav.--show .nav-links .nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 #experience .background .history {
   margin: 20px;
+  text-align: center;
 }
 #experience .background .history h3 {
   font-style: italic;
