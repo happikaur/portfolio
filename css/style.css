@@ -188,20 +188,29 @@ nav:hover .nav-links .nav, nav.--show .nav-links .nav {
   margin: 50px 0;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
-#experience .background h2 {
-  color: midnightblue;
+#experience .background .history {
+  margin: 20px;
 }
-#experience .background p {
-  margin-top: 10px;
-}
-#experience .history h3 {
+#experience .background .history h3 {
   font-style: italic;
   color: midnightblue;
 }
-#experience .history .lists {
-  margin: 20px;
-  margin-left: 50px;
+#experience .background .history .icons-container {
+  padding: 20px;
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#experience .background .history .icons-container .icon {
+  padding: 20px;
+  transition: transform 1s;
+}
+#experience .background .history .icons-container .icon:hover {
+  transform: rotate(360deg);
 }
 
 #contact {
@@ -342,6 +351,9 @@ nav:hover .nav-links .nav, nav.--show .nav-links .nav {
   #experience {
     width: calc(100% - 80px);
     padding: 40px;
+  }
+  #experience .background {
+    flex-direction: row;
   }
 
   #contact .contact_container {
