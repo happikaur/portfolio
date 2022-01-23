@@ -269,7 +269,7 @@ nav:hover .nav-links .nav, nav.--show .nav-links .nav {
     justify-content: space-between;
   }
   nav .logo h1 {
-    font-size: 33px;
+    font-size: 30px;
   }
   nav .nav-links {
     position: static;
@@ -316,6 +316,7 @@ nav:hover .nav-links .nav, nav.--show .nav-links .nav {
   }
   #about .intro {
     margin: 50px;
+    margin-top: 150px;
     text-align: center;
     color: #000000;
     background-color: rgba(243, 243, 243, 0.5);
