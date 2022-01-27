@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
 // Variable 
-$dark-blue: midnightblue;
-$white: #fff;
+$dark-blue: rgb(0, 0, 51);
+$white: rgb(243, 243, 243);
 $text-stroke: 3px $dark-blue;
-$background: rgb(255, 204, 208);
+$background: rgb(243, 243, 243);
 $black: #000000;
 $default-font-size: 20px;
 $default-padding: 30px;
+$default-margin: 50px;
 
 * {
   margin: 0;
@@ -32,14 +33,35 @@ nav {
   background-color: $dark-blue;
   height: 60px;
   width: 100%;
-  font-size: 15px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  & a {
-    color: $white;
+
+  .logo h1 {
+    height: 100%;
+    padding-left: 25px;
+    font-size: 28px;
+    font-weight: normal;
+  }
+    
+  .menu {
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 10px;
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+  }
+  .nav-links {
+    display: none;    
     text-decoration: none;
+    font-size: 20px;
+    .nav {
+      color: $white;
+      text-decoration: none;
+    }
   }
   &:hover, &.--show {
     .nav-links {
@@ -60,30 +82,6 @@ nav {
   }
 }
 
-.logo {
-  height: 100%;
-  width: 40%;
-  display: flex;
-  flex-direction: row;
-  padding-left: 25px;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.menu {
-  font-size: 30px;
-  font-weight: bold;
-  padding-right: 25px;
-  width: 10%;
-  display: flex;
-  justify-content: space-around;
-  align-content: flex-end;
-}
-
-.nav-links {
-  display: none;
-}
-
 .heading {
   font-size: 35px;
   color: $dark-blue;
@@ -93,49 +91,29 @@ nav {
 
 #about {
   width: 100%;
-  padding-top: 80px;
+  padding: 100px 0;
   background-image: url(../image/background-unsplash.jpg);
   background-size: cover;
 
   .name {
     margin: 50px;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     font-size: 45px;
     font-weight: 700;
-    color: $white;
-    text-stroke: $text-stroke;
-    -webkit-text-stroke: $text-stroke; 
-  }
-
-  .keyword {
-    margin: 50px;
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-      .badge {
-        border-radius: 10px;
-        padding: 5px;
-        margin: 10px;
-        border: 2px solid black;
-        display: inline;
-        background-color: midnightblue;
-        color: whitesmoke;
-        font-variant: small-caps;
-      }
-  }
-  .intro {
-    margin: 30px;
-    margin-top: 0;
-   
-    .p {
-      margin-bottom: 15px;
+    color: $dark-blue;
+    p {
+      font-size: 35px;
     }
   }
-  .aws-badges {
-    text-align: center;
+
+  .intro {
+    padding: 30px;
+    color: $white;
+    
+    .p {
+      margin-bottom: 15px;     
+    }
   }
 }
 
@@ -144,68 +122,71 @@ nav {
   flex-direction: column;
   align-items: center;
   padding: $default-padding;
+  margin-top: $default-margin;
 
-  .project {
-    width: 100%;
-    padding: 30px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    h2, p {
-      margin-bottom: 10px;
-    }
-
-    .box {
-      width: 400px;
-      height: 300px;
-      background-color: $dark-blue;
-      color: $white;
-      background-image: url('https://via.placeholder.com/300');
-      background-size: cover;
-      background-repeat: no-repeat;
-
-      .project-img {
-        width: 100%;
-        height: 100%;
+  .projects-container-main {
+    margin: $default-margin 0;
+    .project {
+      width: 100%;
+      padding: 30px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+       p {
+        margin-bottom: 10px;
       }
-
-      .description {
-        height: calc(100% - 40px);
-        padding: 20px;
-        text-align: center;
-
-        p {
-          display: none;
+      .box {
+        width: 400px;
+        height: 300px;
+        background-color: $dark-blue;
+        color: $white;
+        background-image: url('https://via.placeholder.com/300');
+        background-size: cover;
+        background-repeat: no-repeat;
+  
+        .project-img {
+          width: 100%;
+          height: 100%;
         }
-      }
-
-      &:hover {
-        background-image: none;
-
-        .description{
-          display: flex;
-          align-items: center;
-
+  
+        .description {
+          height: calc(100% - 40px);
+          padding: 20px;
+          text-align: center;
+  
           p {
-            display: block;
+            display: none;
+          }
+        }
+  
+        &:hover {
+          background-image: none;
+  
+          .description{
+            display: flex;
+            align-items: center;
+  
+            p {
+              display: block;
+            }
           }
         }
       }
-    }
-
-    .links {
-      width: 400px;
-      display: flex;
-      justify-content: space-around;
-
-      .link {
-        color: $black;
-        margin-top: 10px;
-        font-size: 40px;
+  
+      .links {
+        width: 400px;
+        display: flex;
+        justify-content: space-around;
+  
+        .link {
+          color: $black;
+          margin-top: 10px;
+          font-size: 40px;
+        }
       }
     }
-  }
+}
+ 
 }
 
 #experience {
@@ -213,28 +194,38 @@ nav {
   padding: $default-padding;
   
   .background {
-    margin: 50px 0;
+    margin: $default-margin 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
-    h2 {
-      color: $dark-blue;
-    }
-
-    p {     
-      margin-top: 10px;
-    }
-    
-  }
-  .history {
-    h3 { 
-    font-style: italic;
-    color: $dark-blue;
-    }
-
-    .lists {
+    .history {
       margin: 20px;
-      margin-left: 50px;
+      text-align: center;
+
+      h3 { 
+      font-style: italic;
+      color: $dark-blue;
+      }
+
+      .icons-container {
+        padding: 20px;
+        font-size: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .icon {
+          padding: 20px;
+          transition: transform 1s;
+
+          &:hover {
+            transform: rotate(360deg);
+          }
+        }
+      }
     }
   }
 }
@@ -324,9 +315,28 @@ nav {
     align-items: center;
     justify-content: space-between;
 
-    & a {
-      color: $white;
-      text-decoration: none;
+   .logo h1 {
+     font-size: 30px;
+   }
+    .nav-links {
+      position: static;
+      top: auto;
+      right: 10px;
+      display: flex;
+      flex-direction: row;
+      width: auto;
+      padding: 0;
+      background-color: $dark-blue;
+      width: 70%;
+      justify-content: flex-end;
+      padding-right: 15px;
+      .nav {
+        margin: 10px;
+        font-size: 25px;
+        color: $white;
+        text-decoration: none;
+        padding-left: 20px;
+      }
     }
 
     &:hover, &.--show {
@@ -339,27 +349,8 @@ nav {
         width: auto;
         padding: 0;
         background-color: $dark-blue;
-        font-weight: bold;
         width: 70%;
         justify-content: flex-end;
-      }
-    }
-
-    .nav-links {
-      position: static;
-      top: auto;
-      right: 10px;
-      display: flex;
-      flex-direction: row;
-      width: auto;
-      padding: 0;
-      background-color: $dark-blue;
-      font-weight: bold;
-      width: 70%;
-      justify-content: flex-end;
-
-      .nav {
-        margin: 10px;
       }
     }
 
@@ -368,14 +359,18 @@ nav {
     }
   }
   #about {
-    height: calc(100% - 80px);
+    height: calc(100vh - 200px);
 
     .name {
       font-size: 55px;
+      padding: 50px 0;
     }
     .intro {
-      margin: 50px;
+      margin: $default-margin;
+      margin-top: 150px;
       text-align: center;
+      color: $black;
+      background-color:  rgba($color: $white, $alpha: 0.5);
     }
   }
   #portfolio {
@@ -397,8 +392,13 @@ nav {
   #experience {
     width: calc(100% - 80px);
     padding: 40px;
+
+    .background {
+      flex-direction: row;
+    }
   }
 
+  
   #contact {
     .contact_container {
     display: grid;
