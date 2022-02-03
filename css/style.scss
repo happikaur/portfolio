@@ -106,10 +106,12 @@ nav {
       font-size: 35px;
     }
   }
+}
 
+#intro {
   .intro {
     padding: 30px;
-    color: $white;
+    color: $black;
     
     .p {
       margin-bottom: 15px;     
@@ -351,6 +353,7 @@ nav {
         background-color: $dark-blue;
         width: 70%;
         justify-content: flex-end;
+        padding-right: 15px;
       }
     }
 
@@ -358,6 +361,7 @@ nav {
       display: none;
     }
   }
+
   #about {
     height: calc(100vh - 200px);
 
@@ -365,14 +369,16 @@ nav {
       font-size: 55px;
       padding: 50px 0;
     }
-    .intro {
-      margin: $default-margin;
-      margin-top: 150px;
-      text-align: center;
-      color: $black;
-      background-color:  rgba($color: $white, $alpha: 0.5);
-    }
   }
+
+  #intro {
+    margin: $default-margin;
+    padding: 30px;
+    text-align: center;
+    color: $black;
+    background-color:  rgba($color: $white, $alpha: 0.5);
+  }
+
   #portfolio {
     display: flex;
     flex-wrap: wrap;
