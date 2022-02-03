@@ -128,6 +128,9 @@ nav:hover .nav-links .nav, nav.--show .nav-links .nav {
   background-size: cover;
   background-repeat: no-repeat;
 }
+#portfolio .projects-container-main .project .box.project-one {
+  background-image: url("../image/calculator-project.png");
+}
 #portfolio .projects-container-main .project .box .project-img {
   width: 100%;
   height: 100%;

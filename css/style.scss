@@ -145,6 +145,10 @@ nav {
         background-image: url('https://via.placeholder.com/300');
         background-size: cover;
         background-repeat: no-repeat;
+
+        &.project-one {
+          background-image: url('../image/calculator-project.png');
+        }
   
         .project-img {
           width: 100%;
