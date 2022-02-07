@@ -131,6 +131,12 @@ nav:hover .nav-links .nav, nav.--show .nav-links .nav {
 #portfolio .projects-container-main .project .box.project-one {
   background-image: url("../image/calculator-project.png");
 }
+#portfolio .projects-container-main .project .box.project-two {
+  background-image: url("../image/american-flag.png");
+}
+#portfolio .projects-container-main .project .box.project-three {
+  background-image: url("../image/snakes-and-ladders.png");
+}
 #portfolio .projects-container-main .project .box .project-img {
   width: 100%;
   height: 100%;
