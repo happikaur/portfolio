@@ -183,18 +183,17 @@ nav:hover .nav-links .nav, nav.--show .nav-links .nav {
 }
 #experience .background .history {
   margin: 20px;
-  text-align: center;
 }
 #experience .background .history h3 {
   font-style: italic;
   color: #000033;
 }
 #experience .background .history .icons-container {
-  padding: 20px;
+  padding: 20px 0px;
   font-size: 40px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 #experience .background .history .icons-container .icon {
@@ -203,6 +202,12 @@ nav:hover .nav-links .nav, nav.--show .nav-links .nav {
 }
 #experience .background .history .icons-container .icon:hover {
   transform: rotate(360deg);
+}
+#experience .background .history .icons-container .work-exp {
+  font-size: 15px;
+}
+#experience .background .history .icons-container .work-exp .desc {
+  padding: 5px 0;
 }
 
 #contact {
